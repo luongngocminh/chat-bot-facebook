@@ -14,7 +14,7 @@ tkb["Fri"]="Toán, Hóa, Tin, Quốc Phòng, Công Nghệ";
 tkb["Sat"]="Anh, Địa, Công Nghệ, Toán, Toán";
 
 
-login({email: "ngocminhluong182@outlook.com", password: "matkhau1234"}, function callback(err, api){
+login({email: {{YOUR_EMAIL}}, password: {{YOUR_PASSWORD}}}, function callback(err, api){
 	if(err) return console.error(err);
 
 	var stopListening = api.listen(function(err, event) {
